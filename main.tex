@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeCompany}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://whereistejas.github.io}{\Large Tejas Sanap}} & Email : \href{mailto:sanap.tejas@gmail.com}{sanap.tejas@gmail.com}\\
+  \href{https://whereistejas.github.io}{https://whereistejas.github.io} & Mobile : +91 - 9765 698 365 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+	\resumeSubHeadingListStart
+	  \resumeSubheading
+		{Sinhagad Academy of Engineering}{Pune, India}
+		{Bachelor of Engineering in Mechanical Engineering;  GPA: 7.75/10.0}{Aug. 2016 -- July. 2019}
+	\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+	\resumeCompany
+      {Wipro Ltd.}{Pune, India}
+      {Project Engineer}{Oct 2019 - Present}
+		\resumeSubHeadingListStart
+		\resumeSubheading
+		  {Client: Johnson and Johnson}{Off-site}
+		  {ABAP and HANA Developer}{Feb 2020 - Present}
+			\resumeItemListStart
+			\resumeItem{oData Services}
+			  {}
+			\resumeItem{User Transfer Application}
+			  {}
+			\resumeItem{User to Role Report} 
+			  {}
+			\resumeItem{Miscelleneous}
+			  {}
+			\resumeItemListEnd
+		\resumeSubHeadingListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%--------TALKS AND WORKSHOPS----------
+\section{Talks and Workshops}
+	\resumeSubHeadingListStart
+	  	\resumeSubheading
+	  	  {Workshop on LaTeX: Article, Reports and Slides}{Nashik, India}
+		  {KKWIER}{Dec 2019}
+	  	\resumeSubheading
+	  	  {Talk on Container Internals: cgroups and podman}{Pune, India}
+		  {Kernel Meetup}{Dec 2019}
+	  	\resumeSubheading
+	  	  {Talk on Unix Command Line Utilties}{Pune, India}
+		  {Pune Linux Users Group}{Jul 2019}
+	\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+	\resumeSubHeadingListStart
+		\item{\textbf{Languages}{: ABAP, Python, SQL, SQLScript, Bash Scripting, LaTeX} }
+			\hfill
+		\item{\textbf{Markup Languages}{: HTML and CSS, Markdown} }
+			\hfill
+		\item{\textbf{Technologies}{: SAP GRC, Unix (RHEL and Debian), AWS, Docker, Git} }
+			\hfill
+	\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
